@@ -2,6 +2,8 @@
   --primary-text-color: #2e2f42;
   --title-text-color: #434455;
   --accept-color: #404bbf;
+  --primary-brand: #4d5ae5;
+  --light-mode-backgrounds: #f4f4fd;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.02em;
+  font-size: 16px;
 }
 .list {
   list-style: none;
@@ -26,12 +29,12 @@ body {
   text-decoration: none;
 }
 .logo .accent {
-  color: #4d5ae5;
+  color: var(--primary-brand);
 }
 .header-link {
   color: var(--primary-text-color);
+  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
 
   text-decoration: none;
@@ -47,7 +50,6 @@ body {
   color: var(--title-text-color);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
 }
@@ -55,29 +57,17 @@ body {
 .addres-link:focus {
   color: var(--accept-color);
 }
-.invsible-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 /* Hero */
-
+.hero {
+  background-color: var(--primary-text-color);
+}
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   color: #ffffff;
-  background-color: var(--primary-text-color);
 }
 
 .hero-btn {
@@ -87,28 +77,38 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand);
   cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--accept-color);
 }
-/* Quality */
+/* works */
 
+/* Quality */
 .quality-title {
+  visibility: hidden;
+}
+.quality-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
 .qualite-description {
   color: var(--title-text-color);
-  font-size: 16px;
+
   line-height: 1.5;
 }
 /* what are we doing */
+.works-title,
+.projects-title {
+  visibility: hidden;
+}
 /* Our Team */
-
+.team {
+  background-color: var(--light-mode-backgrounds);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -124,7 +124,6 @@ body {
 }
 .team-description {
   color: var(--title-text-color);
-  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -134,23 +133,22 @@ body {
 }
 
 .footer-logo {
-  color: #f4f4fd;
+  color: var(--light-mode-backgrounds);
 }
 .footer-description {
   color: #e7e9fc;
-  font-size: 16px;
   line-height: 1.5;
 }
 /*--------- page PORTFOLIO ------*/
 
 .projects-btn {
-  color: #4d5ae5;
+  color: var(--primary-brand);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: #f4f4fd;
+  background-color: var(--light-mode-backgrounds);
   cursor: pointer;
 }
 .projects-btn:hover,
@@ -178,7 +176,7 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+
   line-height: 1.5;
   color: var(--title-text-color);
 }
